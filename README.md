@@ -109,6 +109,7 @@ I need to perform a hunt for a Command and Control alert that has been triggered
 9b. Connect a non-Azure Windows machine
 I connected the non-Azure windows machine using the Windows Security Events via AMA data connector 
 then I created a data collection rule that collects data from the On-prem server
+
 ![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20131302.png)
 
 9c. Command and control attack with DNS
