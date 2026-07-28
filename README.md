@@ -101,5 +101,31 @@ I was responsible for settign up the Microsofty Sentinel environment to meet com
 ![Sentinel Logs]()
 ---
 ### 9. Perform threat hunting in Microsoft Sentinel
+I need to perform a hunt for a Command and Control alert that has been triggered.
 
+9a. Connect an On-prem server
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20130322.png)
+
+9b. Connect a non-Azure Windows machine
+I connected the non-Azure windows machine using the Windows Security Events via AMA data connector 
+then I created a data collection rule that collects data from the On-prem server
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20131302.png)
+
+9c. Command and control attack with DNS
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20132417.png)
+
+9d. Create a hunting query to identify PowerShell requests that are running in the environment.
+I then went on to create a bookmark
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20133311.png)
+
+9e. Create an NRT query rule
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20141935.png)
+
+9f. Create a hunt that combines multiple queries into a MITRE tactic
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20143626.png)
+
+9h. Threat Hunting using Notebooks in Microsoft Sentinel.
+I first created a machine learning workspace then I cloned a notebook template
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20145114.png)
+![Threat Hunt](https://github.com/ZaneleLM/Assets/blob/main/Screenshot%202026-07-28%20145631.png)
 
